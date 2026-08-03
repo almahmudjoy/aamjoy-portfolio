@@ -13,10 +13,13 @@ themeToggle.addEventListener('click', () => {
 });
 
 // ---------- CV link (single source of truth) ----------
-const CV_URL = '#'; // TODO: replace with hosted resume PDF URL
+const CV_URL = 'Abdullah_Al_Mahmud_Joy_CV.pdf';
 ['navCvBtn','heroCvBtn','ctaCvBtn','sideCvBtn'].forEach(id => {
   const el = document.getElementById(id);
-  if (el) el.setAttribute('href', CV_URL);
+  if (!el) return;
+  el.setAttribute('href', CV_URL);
+  el.setAttribute('target', '_blank');
+  el.setAttribute('rel', 'noopener');
 });
 
 // ---------- Nav scroll state + active link + progress bar ----------
