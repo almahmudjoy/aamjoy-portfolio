@@ -165,10 +165,7 @@ ul{list-style:none}
 .avatar{
   width:260px;height:260px;border-radius:50%;
   background:var(--surface);border:2px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:5rem;font-weight:800;
-  background-image:var(--gradient);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  object-fit:cover;
   position:relative;z-index:1;box-shadow:var(--shadow);
 }
 .avatar::after{
@@ -384,7 +381,7 @@ ul{list-style:none}
 @media (max-width:560px){
   .form-row{grid-template-columns:1fr}
   .avatar-ring{width:240px;height:240px}
-  .avatar{width:190px;height:190px;font-size:3.6rem}
+  .avatar{width:190px;height:190px}
   .badge-float{display:none}
   .section{padding:80px 0}
 }
