@@ -222,7 +222,7 @@ const otherProjects = [
 
 function renderFeatured(list, container) {
   container.innerHTML = list.map((p, i) => `
-    <article class="project-card reveal" style="transition-delay:${(i % 3) * 90}ms">
+    <article class="project-card reveal" data-cat="${p.category}" style="transition-delay:${(i % 3) * 90}ms">
       <div class="project-cover">${p.icon}</div>
       <div class="project-body">
         <div class="project-top">
@@ -240,7 +240,7 @@ function renderFeatured(list, container) {
 
 function renderOther(list, container) {
   container.innerHTML = list.map((p, i) => `
-    <article class="project-card reveal" style="transition-delay:${(i % 4) * 80}ms">
+    <article class="project-card reveal" data-cat="${p.category}" style="transition-delay:${(i % 4) * 80}ms">
       <div class="project-cover">${p.icon}</div>
       <div class="project-body">
         <div class="project-top">
@@ -301,7 +301,7 @@ const education = [
 
 function renderTimeline(list, container) {
   container.innerHTML = list.map((item, i) => `
-    <div class="tl-item reveal" style="transition-delay:${Math.min(i,4) * 70}ms">
+    <div class="tl-item reveal" data-type="${item.badge}" style="transition-delay:${Math.min(i,4) * 70}ms">
       <div class="tl-card">
         <div class="tl-top">
           <div>
