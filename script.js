@@ -43,6 +43,20 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// ---------- JS-driven anchor scroll (bulletproof against CSS scroll-margin cache/support issues) ----------
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const id = link.getAttribute('href').slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const navHeight = nav.getBoundingClientRect().height;
+    const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    history.pushState(null, '', '#' + id);
+  });
+});
+
 // ---------- Mobile menu ----------
 const hamburger = document.getElementById('hamburger');
 const navLinksWrap = document.getElementById('navLinks');
@@ -53,6 +67,18 @@ hamburger.addEventListener('click', () => {
 navLinksWrap.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => navLinksWrap.classList.remove('open'))
 );
+
+// ---------- Hero cursor glow ----------
+const heroBg = document.querySelector('.hero-bg');
+if (heroBg && window.matchMedia('(hover: hover)').matches) {
+  document.querySelector('.hero').addEventListener('mousemove', (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    heroBg.style.setProperty('--mx', x + '%');
+    heroBg.style.setProperty('--my', y + '%');
+  });
+}
 
 // ---------- Scroll reveal ----------
 const revealObserver = new IntersectionObserver((entries) => {
@@ -195,8 +221,8 @@ const otherProjects = [
 ];
 
 function renderFeatured(list, container) {
-  container.innerHTML = list.map(p => `
-    <article class="project-card reveal">
+  container.innerHTML = list.map((p, i) => `
+    <article class="project-card reveal" style="transition-delay:${(i % 3) * 90}ms">
       <div class="project-cover">${p.icon}</div>
       <div class="project-body">
         <div class="project-top">
@@ -213,8 +239,8 @@ function renderFeatured(list, container) {
 }
 
 function renderOther(list, container) {
-  container.innerHTML = list.map(p => `
-    <article class="project-card reveal">
+  container.innerHTML = list.map((p, i) => `
+    <article class="project-card reveal" style="transition-delay:${(i % 4) * 80}ms">
       <div class="project-cover">${p.icon}</div>
       <div class="project-body">
         <div class="project-top">
@@ -274,8 +300,8 @@ const education = [
 ];
 
 function renderTimeline(list, container) {
-  container.innerHTML = list.map(item => `
-    <div class="tl-item reveal">
+  container.innerHTML = list.map((item, i) => `
+    <div class="tl-item reveal" style="transition-delay:${Math.min(i,4) * 70}ms">
       <div class="tl-card">
         <div class="tl-top">
           <div>
@@ -304,8 +330,8 @@ const publications = [
   { title: 'Detecting Potholes with Convolutional Neural Networks and Transfer Learning', venue: '2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429287' }
 ];
 
-document.getElementById('pubList').innerHTML = publications.map(p => `
-  <div class="pub-item reveal">
+document.getElementById('pubList').innerHTML = publications.map((p, i) => `
+  <div class="pub-item reveal" style="transition-delay:${i * 80}ms">
     <div>
       <div class="pub-title">${p.title}</div>
       <div class="pub-venue">${p.venue}</div>
