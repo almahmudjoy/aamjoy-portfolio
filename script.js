@@ -146,6 +146,19 @@ const featuredProjects = [
     link: 'https://github.com/almahmudjoy/DMoney-Manual-Testing'
   },
   {
+    icon: '🔗',
+    title: 'DMoney API Integration Testing',
+    category: 'QA',
+    desc: 'End-to-end integration test suite for a DMoney-style MFS backend, validating the full transaction lifecycle in one continuous stateful flow.',
+    points: [
+      '37 test cases with Mocha, Chai, and Axios against a live Node.js backend',
+      'Validated onboarding, deposit, send-money, cash-out, and merchant payment flows',
+      'Asserted real commission/fee calculations and resulting balances at each step'
+    ],
+    tags: ['Mocha', 'Chai', 'Axios', 'Node.js', 'FinTech'],
+    link: 'https://github.com/almahmudjoy/dmoney-api-integration-testing'
+  },
+  {
     icon: '🔌',
     title: 'DummyJSON API Testing',
     category: 'QA',
