@@ -120,19 +120,6 @@ document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
 // ---------- Data: Featured Testing Projects ----------
 const featuredProjects = [
   {
-    icon: '💸',
-    title: 'DMoney API Testing',
-    category: 'QA',
-    desc: 'Automated API test suite for a DMoney-style mobile financial service — onboarding, deposits, transfers, and merchant payments.',
-    points: [
-      '30 test cases (18 positive / 12 negative) across 21 requests, 76 passing assertions',
-      'Validated commission calculations, service fees, and account balance accuracy',
-      'Automated with Postman + Newman, HTML reports via Newman Reporter HTMLExtra'
-    ],
-    tags: ['Postman', 'Newman', 'Node.js', 'REST API', 'FinTech'],
-    link: 'https://github.com/almahmudjoy/DMoney-API-Testing'
-  },
-  {
     icon: '📱',
     title: 'DMoney Manual Testing',
     category: 'QA',
@@ -144,6 +131,19 @@ const featuredProjects = [
     ],
     tags: ['Manual Testing', 'Exploratory Testing', 'Bug Reporting', 'FinTech'],
     link: 'https://github.com/almahmudjoy/DMoney-Manual-Testing'
+  },
+  {
+    icon: '💸',
+    title: 'DMoney API Testing',
+    category: 'QA',
+    desc: 'Automated API test suite for a DMoney-style mobile financial service — onboarding, deposits, transfers, and merchant payments.',
+    points: [
+      '30 test cases (18 positive / 12 negative) across 21 requests, 76 passing assertions',
+      'Validated commission calculations, service fees, and account balance accuracy',
+      'Automated with Postman + Newman, HTML reports via Newman Reporter HTMLExtra'
+    ],
+    tags: ['Postman', 'Newman', 'Node.js', 'REST API', 'FinTech'],
+    link: 'https://github.com/almahmudjoy/DMoney-API-Testing'
   },
   {
     icon: '🔗',
