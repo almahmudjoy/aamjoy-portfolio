@@ -123,110 +123,109 @@ const featuredProjects = [
     icon: '📱',
     title: 'DMoney Manual Testing',
     category: 'QA',
-    desc: 'Manual QA testing across two FinTech apps (dMoney & EasyPay) — exploratory testing, bug reporting, and acceptance criteria.',
+    desc: 'Manual QA validation for a FinTech application flow focused on user journeys, functional coverage, and defect documentation.',
     points: [
-      'Exploratory testing on transaction limits, commission logic, and float precision',
-      'Documented 8 evidence-backed bugs incl. limit-bypass and fee text mismatches',
-      'Wrote structured test case matrices and formal acceptance criteria'
+      'Functional, exploratory, and acceptance-based testing',
+      'Bug reporting with evidence-backed defect analysis',
+      'Repository: github.com/almahmudjoy/DMoney-Manual-Testing'
     ],
-    tags: ['Manual Testing', 'Exploratory Testing', 'Bug Reporting', 'FinTech'],
+    tags: ['Manual Testing', 'Bug Reporting', 'FinTech'],
     link: 'https://github.com/almahmudjoy/DMoney-Manual-Testing'
-  },
-  {
-    icon: '💸',
-    title: 'DMoney API Testing',
-    category: 'QA',
-    desc: 'Automated API test suite for a DMoney-style mobile financial service — onboarding, deposits, transfers, and merchant payments.',
-    points: [
-      '30 test cases (18 positive / 12 negative) across 21 requests, 76 passing assertions',
-      'Validated commission calculations, service fees, and account balance accuracy',
-      'Automated with Postman + Newman, HTML reports via Newman Reporter HTMLExtra'
-    ],
-    tags: ['Postman', 'Newman', 'Node.js', 'REST API', 'FinTech'],
-    link: 'https://github.com/almahmudjoy/DMoney-API-Testing'
   },
   {
     icon: '🔗',
     title: 'DMoney API Integration Testing',
     category: 'QA',
-    desc: 'End-to-end integration test suite for a DMoney-style MFS backend, validating the full transaction lifecycle in one continuous stateful flow.',
+    desc: 'Stateful backend validation covering onboarding, deposits, transfers, merchant payments, and balance verification in an API-driven workflow.',
     points: [
-      '37 test cases with Mocha, Chai, and Axios against a live Node.js backend',
-      'Validated onboarding, deposit, send-money, cash-out, and merchant payment flows',
-      'Asserted real commission/fee calculations and resulting balances at each step'
+      'Mocha, Chai, and Axios integration test coverage',
+      'Workflow validation across transaction lifecycle',
+      'Repository: github.com/almahmudjoy/dmoney-api-integration-testing'
     ],
-    tags: ['Mocha', 'Chai', 'Axios', 'Node.js', 'FinTech'],
+    tags: ['API Testing', 'Integration', 'Node.js'],
     link: 'https://github.com/almahmudjoy/dmoney-api-integration-testing'
   },
   {
-    icon: '🔌',
-    title: 'DummyJSON API Testing',
-    category: 'QA',
-    desc: 'Real API testing project using hosted DummyJSON endpoints with authentication, negative testing, and performance validation.',
-    points: [
-      'Tested CRUD, auth, and token refresh on live DummyJSON API',
-      'Covered negative scenarios, edge cases, and performance thresholds',
-      'Generated HTML reports via Newman CLI execution'
-    ],
-    tags: ['Postman', 'Newman', 'DummyJSON API', 'REST API'],
-    link: '#'
-  },
-  {
     icon: '🧩',
-    title: 'Product API Testing',
+    title: 'Blog REST API',
     category: 'QA',
-    desc: 'End-to-end API testing of product management endpoints using Postman and json-server.',
+    desc: 'API reliability testing for a blog service focusing on REST endpoints, validation, and functional behavior under common test scenarios.',
     points: [
-      'Tested CRUD endpoints using Postman and json-server',
-      'Validated status codes, response body, and dynamic ID flow',
-      'Used Collection Runner / Newman for batch execution'
+      'Endpoint validation and request-response checking',
+      'REST API quality assurance workflow',
+      'Repository: github.com/almahmudjoy/blog-rest-api'
     ],
-    tags: ['Postman', 'json-server', 'Newman', 'API Testing'],
-    link: '#'
+    tags: ['REST API', 'Postman', 'Backend Testing'],
+    link: 'https://github.com/almahmudjoy/blog-rest-api'
   },
   {
-    icon: '🛒',
-    title: 'Alibaba E-commerce Testing',
+    icon: '🗃️',
+    title: 'Database Project',
     category: 'QA',
-    desc: 'Manual testing of a large-scale e-commerce platform covering critical user journeys.',
+    desc: 'Database-focused project covering schema understanding, data validation, and query-driven verification for backend reliability.',
     points: [
-      'Created test scenarios for signup, login, cart, and checkout',
-      'Reported functional and UI issues with detailed steps',
-      'Documented 50+ manual test cases with expected results'
+      'Database validation and query review',
+      'Data integrity and consistency checks',
+      'Repository: github.com/almahmudjoy/database-project'
     ],
-    tags: ['Manual Testing', 'Test Cases', 'Bug Reporting'],
-    link: '#'
+    tags: ['SQL', 'Database', 'Data Validation'],
+    link: 'https://github.com/almahmudjoy/database-project'
   },
   {
-    icon: '🚚',
-    title: 'SteadFast Courier Mobile Testing',
+    icon: '📝',
+    title: 'Blog Management Application',
     category: 'QA',
-    desc: 'Comprehensive mobile app testing for a courier tracking and delivery management system.',
+    desc: 'Workflow-based software testing project for blog content management, covering user actions and end-to-end validation of application behavior.',
     points: [
-      'Tested parcel tracking, order placement, and delivery status flows',
-      'Verified UI responsiveness across different screen sizes',
-      'Identified and documented usability and navigation issues'
+      'Application workflow testing',
+      'Feature validation and defect analysis',
+      'Repository: github.com/almahmudjoy/blog-management-application'
     ],
-    tags: ['Mobile Testing', 'UI Testing', 'Bug Reporting'],
-    link: '#'
+    tags: ['Web App', 'Workflow Testing', 'UI Validation'],
+    link: 'https://github.com/almahmudjoy/blog-management-application'
   },
   {
-    icon: '🔐',
-    title: 'Facebook Login Page Testing',
+    icon: '⚡',
+    title: 'Dmoney K6 Testing',
     category: 'QA',
-    desc: 'Security-focused testing of social media authentication with boundary and negative test cases.',
+    desc: 'Performance and load-aware API testing using K6 to evaluate responsiveness and stability under expected traffic conditions.',
     points: [
-      'Designed test cases for valid/invalid login scenarios',
-      'Tested boundary values, empty fields, and error messages',
-      'Validated password masking and session handling behavior'
+      'Load and performance-oriented API checks',
+      'Traffic simulation and response analysis',
+      'Repository: github.com/almahmudjoy/Dmoney-K6-Testing'
     ],
-    tags: ['Security Testing', 'Functional Testing', 'Test Design'],
-    link: '#'
+    tags: ['K6', 'Performance Testing', 'Load Testing'],
+    link: 'https://github.com/almahmudjoy/Dmoney-K6-Testing'
+  },
+  {
+    icon: '💸',
+    title: 'DMoney API Testing',
+    category: 'QA',
+    desc: 'API-focused quality assurance project for a DMoney-style service covering authentication, business flows, and validation checks.',
+    points: [
+      'Automated API validation for core business flows',
+      'Request/response validation and assertion coverage',
+      'Repository: github.com/almahmudjoy/DMoney-API-Testing'
+    ],
+    tags: ['Postman', 'Newman', 'REST API'],
+    link: 'https://github.com/almahmudjoy/DMoney-API-Testing'
+  },
+  {
+    icon: '🎭',
+    title: 'Automation on Playwright',
+    category: 'QA',
+    desc: 'Browser automation project focused on automated UI workflow validation for modern web application interaction and regression coverage.',
+    points: [
+      'Playwright-based UI automation',
+      'Regression and interaction validation',
+      'Repository: github.com/almahmudjoy/Automation-on-Playwright'
+    ],
+    tags: ['Playwright', 'Automation', 'UI Testing'],
+    link: 'https://github.com/almahmudjoy/Automation-on-Playwright'
   }
 ];
 
 const otherProjects = [
-  { icon: '🧠', title: 'Brain Tumor Classifier', category: 'AI/ML', desc: 'Multi-class MRI tumor detection using deep learning and convolutional neural networks.', tags: ['Python', 'CNN', 'Deep Learning'], link: '#' },
   { icon: '🦷', title: 'Dental Clinic Portal', category: 'Web', desc: 'Web portal for dental clinic appointments, patient feedback, and clinic management.', tags: ['PHP', 'HTML/CSS', 'MySQL'], link: '#' },
   { icon: '🗂️', title: 'Student Attendance System', category: 'Desktop', desc: 'GUI-based CRUD application for managing student attendance with data export.', tags: ['Python', 'GUI', 'CRUD'], link: '#' },
   { icon: '📝', title: 'Online Quiz System', category: 'Web', desc: 'MCQ platform with real-time leaderboard and quiz management features.', tags: ['Java', 'Quiz', 'Leaderboard'], link: '#' },
@@ -274,13 +273,120 @@ function renderOther(list, container) {
 renderFeatured(featuredProjects, document.getElementById('featuredProjects'));
 renderOther(otherProjects, document.getElementById('otherProjects'));
 
+const researchProjects = [
+  {
+    icon: '🧠',
+    title: 'Brain Tumor Classification Using MRI',
+    category: 'AI/ML',
+    desc: 'Compared CNN architectures for MRI-based brain tumor classification and evaluated model performance across multiple deep learning baselines.',
+    points: [
+      'Experimental comparison of CNN architectures for tumor recognition',
+      'Strong focus on quantitative evaluation and model interpretability',
+      'Published in IEEE COMPAS 2025'
+    ],
+    tags: ['Featured Research', 'CNN', 'MRI', 'Deep Learning', 'Comparative Analysis'],
+    link: 'https://ieeexplore.ieee.org/document/11381807'
+  },
+  {
+    icon: '🌾',
+    title: 'CropNet-XAI',
+    category: 'AI/ML',
+    desc: 'Explainable 1D-CNN framework for transparent crop yield prediction with model reasoning in agricultural forecasting.',
+    points: [
+      '1D-CNN architecture for crop yield prediction',
+      'Explainable AI support for transparent decision-making',
+      'Published in IEEE ICECTE 2026'
+    ],
+    tags: ['XAI', '1D-CNN', 'Crop Yield', 'Explainability'],
+    link: 'https://ieeexplore.ieee.org/abstract/document/11429350'
+  },
+  {
+    icon: '🌱',
+    title: 'XAI-Crop',
+    category: 'AI/ML',
+    desc: 'Explainable counterfactual crop recommendation system using ensemble learning for transparent agricultural decision support.',
+    points: [
+      'Counterfactual recommendation framework',
+      'Ensemble-based crop recommendation pipeline',
+      'Published in IEEE ICECTE 2026'
+    ],
+    tags: ['Counterfactual AI', 'Ensemble Learning', 'Recommendation', 'Agriculture'],
+    link: 'https://ieeexplore.ieee.org/abstract/document/11429373'
+  },
+  {
+    icon: '🛣️',
+    title: 'Pothole Detection Using Deep Learning',
+    category: 'AI/ML',
+    desc: 'Computer vision pipeline for detecting potholes using convolutional neural networks and transfer learning.',
+    points: [
+      'CNN and transfer-learning-based detection',
+      'Road damage identification using image classification',
+      'Published in IEEE ICECTE 2026'
+    ],
+    tags: ['Transfer Learning', 'Computer Vision', 'CNN', 'Road Safety'],
+    link: 'https://ieeexplore.ieee.org/abstract/document/11429287'
+  },
+  {
+    icon: '🍅',
+    title: 'Potato and Mango Leaf Disease Classification',
+    category: 'AI/ML',
+    desc: 'Featured research project proposing an explainable ensemble learning framework for potato and mango leaf disease classification.',
+    points: [
+      'Combined PlantVillage potato and Kaggle mango datasets',
+      'Soft-voting ensemble with MobileNetV3Small, EfficientNetV2B0, and ConvNeXtTiny',
+      'Accepted for oral presentation; publication pending'
+    ],
+    tags: ['Featured Research', 'Grad-CAM', 'Ensemble Learning', 'Plant Disease'],
+    link: 'https://github.com/almahmudjoy/Potato-and-Mango-Leaf-Disease-Classification'
+  }
+];
+
+function renderResearchProjects(list, container) {
+  container.innerHTML = list.map((p, i) => `
+    <article class="project-card reveal" data-cat="${p.category}" style="transition-delay:${(i % 3) * 90}ms">
+      <div class="project-cover">${p.icon}</div>
+      <div class="project-body">
+        <div class="project-top">
+          <h3>${p.title}</h3>
+          <span class="project-cat">${p.category}</span>
+        </div>
+        <p class="project-desc">${p.desc}</p>
+        <ul class="project-points">${p.points.map(pt => `<li>${pt}</li>`).join('')}</ul>
+        <div class="project-tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+        <a class="project-link" href="${p.link}" target="_blank" rel="noopener">View Project →</a>
+      </div>
+    </article>
+  `).join('');
+}
+
+renderResearchProjects(researchProjects, document.getElementById('researchProjects'));
+
 // ---------- Data: Experience ----------
 const experience = [
   {
+    title: 'Software Engineer Intern', org: 'ClockoSoft', date: 'November 2026 – Present · Remote',
+    badge: 'Professional Experience',
+    desc: 'Developing and maintaining product features while ensuring quality through clean, maintainable code, manual and automated testing, and close collaboration with the engineering team.',
+    highlights: [
+      'Feature development & maintenance',
+      'Clean, maintainable code',
+      'Manual & automated test cases',
+      'Bug identification & debugging',
+      'Unit, integration & API testing',
+      'Code review & defect fixes'
+    ]
+  },
+  {
+    title: '4IR Intern', org: 'Bangladesh Institute of Management (BIM)', date: 'September 2026 – Present',
+    badge: 'Professional Experience',
+    desc: 'Exploring 4IR technologies with a focus on AI, Machine Learning, and Research.',
+    highlights: ['AI and ML exploration', 'Research-oriented learning', 'Emerging technologies']
+  },
+  {
     title: 'Teaching Assistant', org: 'Bangladesh University of Business and Technology', date: 'July 2025 – December 2025',
     badge: 'Academic Role',
-    desc: 'Assist faculty members with classroom instruction, grading, and academic support. Contribute to lesson planning, manage student queries, and help maintain a productive and engaging learning environment.',
-    highlights: ['Classroom instruction support', 'Grading and assessment', 'Academic student support', 'Lesson planning contribution']
+    desc: 'Assisted in conducting undergraduate CSE laboratory sessions, supported student learning and technical understanding, and evaluated assignments with guidance on programming and problem solving.',
+    highlights: ['Laboratory support', 'Assignment evaluation', 'Programming guidance', 'Student support']
   },
   {
     title: 'Ad-Hoc Committee Executive Member', org: 'BUBT IT Club', date: 'July 2025 – Present',
@@ -340,10 +446,11 @@ renderTimeline(education, document.getElementById('educationTimeline'));
 
 // ---------- Data: Publications ----------
 const publications = [
-  { title: 'Ensemble Deep Learning for Brain Tumor Classification Using MRI: A Comparative Study of CNN Architectures', venue: '2025 IEEE 2nd International Conference on Computing, Applications and Systems (COMPAS)', date: 'October 23, 2025', link: 'https://ieeexplore.ieee.org/abstract/document/11381807' },
-  { title: 'XAI-Crop: Explainable Counterfactual Crop Recommendation via Ensemble Learning', venue: '2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429373' },
-  { title: 'CropNet-XAI: An Explainable 1D-CNN Framework for Transparent Crop Yield Prediction', venue: '2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429350' },
-  { title: 'Detecting Potholes with Convolutional Neural Networks and Transfer Learning', venue: '2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429287' }
+  { title: 'Ensemble Deep Learning for Brain Tumor Classification Using MRI: A Comparative Study of CNN Architectures', venue: 'IEEE COMPAS 2025', date: 'October 23, 2025', link: 'https://ieeexplore.ieee.org/document/11381807', status: 'Published', accepted: false },
+  { title: 'CropNet-XAI: An Explainable 1D-CNN Framework for Transparent Crop Yield Prediction', venue: 'IEEE ICECTE 2026', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429350', status: 'Published', accepted: false },
+  { title: 'XAI-Crop: Explainable Counterfactual Crop Recommendation via Ensemble Learning', venue: 'IEEE ICECTE 2026', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429373', status: 'Published', accepted: false },
+  { title: 'Detecting Potholes with Convolutional Neural Networks and Transfer Learning', venue: 'IEEE ICECTE 2026', date: 'January 29, 2026', link: 'https://ieeexplore.ieee.org/abstract/document/11429287', status: 'Published', accepted: false },
+  { title: 'Explainable Ensemble Learning for Potato and Mango Leaf Disease Classification Using Lightweight and Transfer Learning Models', venue: '5th International Conference on Innovations in Science, Engineering and Technology (ICISET 2026)', date: '08–10 November 2026 • Chittagong, Bangladesh', link: 'https://github.com/almahmudjoy/Potato-and-Mango-Leaf-Disease-Classification', status: 'Accepted – Publication Pending', accepted: true }
 ];
 
 document.getElementById('pubList').innerHTML = publications.map((p, i) => `
@@ -354,8 +461,8 @@ document.getElementById('pubList').innerHTML = publications.map((p, i) => `
       <div class="pub-date">${p.date}</div>
     </div>
     <div class="pub-right">
-      <span class="pub-status">Published</span>
-      <a class="pub-link" href="${p.link}" target="_blank" rel="noopener">View on IEEE Xplore →</a>
+      <span class="pub-status ${p.accepted ? 'accepted' : ''}">${p.status}</span>
+      <a class="pub-link" href="${p.link}" target="_blank" rel="noopener">${p.accepted ? 'GitHub Repository →' : 'View on IEEE Xplore →'}</a>
     </div>
   </div>
 `).join('');
